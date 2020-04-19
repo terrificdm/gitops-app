@@ -1,1 +1,3 @@
-# This is GitOps demo app repo, using EKS+Jenkins+Flux
+# Application files
+This is GitOps demo app repo
+EKS+Jenkins+Flux
