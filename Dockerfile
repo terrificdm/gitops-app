@@ -1,4 +1,10 @@
-FROM nginx:mainline-alpine
-RUN rm /etc/nginx/conf.d/*
-ADD src/hello.conf /etc/nginx/conf.d/
-ADD src/index.html /usr/share/nginx/html/
+# This is Dockerfile for running Flask-Demo 
+
+FROM python:latest
+
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 80
+CMD ["python", "app.py"]
+
