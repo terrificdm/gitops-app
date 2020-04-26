@@ -1,6 +1,8 @@
 # This is Dockerfile for running Flask-Demo 
 
-FROM python:latest
+FROM python:3.7-alpine
+
+MAINTAINER Daoming
 
 COPY . /app
 WORKDIR /app
